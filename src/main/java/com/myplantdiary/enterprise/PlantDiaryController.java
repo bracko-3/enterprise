@@ -34,15 +34,15 @@ public class PlantDiaryController {
     @GetMapping("/specimen/{id}")
         public ResponseEntity fetchSpecimenById(@PathVariable("id") String id) {
             return new ResponseEntity(HttpStatus.OK);
-    }
+        }
 
     /**
      * Endpoint to create specimen
      */
     @PostMapping(value = "/specimen", consumes = "application/json", produces = "application/json")
         public Specimen createSpecimen(@RequestBody Specimen specimen) {
-        return specimen;
-    }
+            return specimen;
+        }
     /**
      * Endpoint to delete specimen by ID
      */
