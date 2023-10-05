@@ -11,10 +11,7 @@ public class SpecimenServiceStub implements ISpecimenService{
 
     public SpecimenServiceStub(){}
 
-    public SpecimenServiceStub(ISpecimenDAO specimenDAO){
-
-    }
-
+    public SpecimenServiceStub(ISpecimenDAO specimenDAO){}
 
     public Specimen save(Specimen specimen){
         return specimenDAO.save(specimen);
