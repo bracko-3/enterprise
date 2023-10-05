@@ -13,6 +13,10 @@
 <form action="#" th:action="@{/saveSpecimen}" th:object="${specimen}"
       method="GET"><br/>
 
+    <label>Plant: </label><label>
+        <input type="text" name="plantId" th:field="*{plantId}"/>
+    </label><br/>
+
     <label>SpecimenID: </label><label>
         <input type="text" name="specimenId" th:field="*{specimenID}"/>
     </label><br/>
@@ -27,10 +31,6 @@
 
     <label>Description: </label><label>
         <input type="text" name="description" th:field="*{description}"/>
-    </label><br/>
-
-    <label>Plant: </label><label>
-        <input type="text" name="plantId" th:field="*{plantId}"/>
     </label><br/>
 
     <button name="submit" type="submit" value="0">Submit</button>
